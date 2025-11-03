@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://fonts.google.com/noto/specimen/Noto+Sans">
+  <title>Browser extensions manager UI</title>
+  <script type="text/javascript" src="script.js" defer></script>
+</head>
+<body class="darkmode">
+
+  <div class="container">
+
+
+  <div class="header">
+    <div class="logo-extension-head-wrap">
+      <div class="logo-image">
+        <img src="logo.svg" alt="" class="logo main-logo">
+      </div>
+      <p class="extension-head">Extensions</p>
+    </div>
+
+    <button id="mode-icon-wrap">
+      <img src="sun.svg" alt="" class="logo mode-icon" tabindex="0">
+      <img src="moon.svg" alt="" class="logo mode-icon" tabindex="0">
+    </button>
+  </div>
+
+  <div class="extension-filter-wrap">
+    <p class="head-text">Extensions List</p>
+    
+    <div class="filter">
+      <button class="filter-item">All</button>
+      <button class="filter-item">Active</button>
+      <button class="filter-item">Inactive</button>
+    </div>
+    
+
+  </div>
+
+  <!-- If you plan to use the JSON file to populate the data dynamically, you can delete the content below -->
+
+<div class="extension-list-wrap">
+
+
+  <div class="extension-item" data-status="active">
+    <div class="extension-item-wrap">
+      <img src="logo-devlens.svg" alt="" class="logo">
+      <div class="extension-name-text-wrap">
+        <p class="extension-name">DevLens</p>
+        <p class="extension-text">Quickly inspect page layouts and visualize element boundaries.</p>
+      </div>  
+    </div>
+    <div class="remove-toggle-wrap">
+      <button class="remove">Remove</button>
+      <div class="toggle-wrap" tabindex="0">
+        <div class="toggle"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="extension-item" data-status="active">
+    <div class="extension-item-wrap">
+      <img src="logo-style-spy.svg" alt="" class="logo">
+      <div class="extension-name-text-wrap">
+        <p class="extension-name">StyleSpy</p>
+        <p class="extension-text">Instantly analyze and copy CSS from any webpage element.</p>
+      </div>  
+    </div>
+    <div class="remove-toggle-wrap">
+      <button class="remove">Remove</button>
+      <div class="toggle-wrap">
+        <div class="toggle"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="extension-item" data-status="active">
+    <div class="extension-item-wrap">
+      <img src="logo-speed-boost.svg" alt="" class="logo">
+      <div class="extension-name-text-wrap">
+        <p class="extension-name">SpeedBoost</p>
+        <p class="extension-text">Optimizes browser resource usage to accelerate page loading.</p>
+      </div>  
+    </div>
+  <div class="remove-toggle-wrap" data-status="active">
+      <button class="remove">Remove</button>
+      <div class="toggle-wrap">
+        <div class="toggle"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="extension-item" data-status="active">
+    <div class="extension-item-wrap">
+      <img src="logo-json-wizard.svg" alt="" class="logo">
+      <div class="extension-name-text-wrap">
+        <p class="extension-name">JSONWizard</p>
+        <p class="extension-text">Formats, validates, and prettifies JSON responses in-browser.</p>
+      </div>  
+    </div>
+  <div class="remove-toggle-wrap" data-status="active">
+      <button class="remove">Remove</button>
+      <div class="toggle-wrap">
+        <div class="toggle"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="extension-item" data-status="active">
+    <div class="extension-item-wrap">
+      <img src="logo-tab-master-pro.svg" alt="" class="logo">
+      <div class="extension-name-text-wrap">
+        <p class="extension-name">TabMaster Pro</p>
+        <p class="extension-text">Organizes browser tabs into groups and sessions.</p>
+      </div>  
+    </div>
+  <div class="remove-toggle-wrap">
+      <button class="remove">Remove</button>
+      <div class="toggle-wrap">
+        <div class="toggle"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="extension-item" data-status="active">
+    <div class="extension-item-wrap">
+      <img src="logo-viewport-buddy.svg" alt="" class="logo">
+      <div class="extension-name-text-wrap">
+        <p class="extension-name">ViewportBuddy</p>
+        <p class="extension-text">Simulates various screen resolutions directly within the browser.</p>
+      </div>  
+    </div>
+  <div class="remove-toggle-wrap">
+      <button class="remove">Remove</button>
+      <div class="toggle-wrap">
+        <div class="toggle"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="extension-item" data-status="active">
+    <div class="extension-item-wrap">
+      <img src="logo-markup-notes.svg" alt="" class="logo">
+      <div class="extension-name-text-wrap">
+        <p class="extension-name">Markup Notes</p>
+        <p class="extension-text">Enables annotation and notes directly onto webpages for collaborative debugging.</p>
+      </div>  
+    </div>
+  <div class="remove-toggle-wrap">
+      <button class="remove">Remove</button>
+      <div class="toggle-wrap">
+        <div class="toggle"></div>
+      </div>
+    </div>
+  </div>
+ 
+  <div class="extension-item" data-status="active">
+    <div class="extension-item-wrap">
+      <img src="logo-grid-guides.svg" alt="" class="logo">
+      <div class="extension-name-text-wrap">
+        <p class="extension-name">GridGuides</p>
+        <p class="extension-text">Overlay customizable grids and alignment guides on any webpage.</p>
+      </div>  
+    </div>
+  <div class="remove-toggle-wrap">
+      <button class="remove">Remove</button>
+      <div class="toggle-wrap">
+        <div class="toggle"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="extension-item" data-status="active">
+    <div  class="extension-item-wrap">
+      <img src="logo-palette-picker.svg" alt="" class="logo">
+      <div class="extension-name-text-wrap">
+        <p class="extension-name">Palette Picker</p>
+        <p class="extension-text">Instantly extracts color palettes from any webpage.</p>
+      </div>  
+    </div>
+  <div class="remove-toggle-wrap">
+      <button class="remove">Remove</button>
+      <div class="toggle-wrap">
+        <div class="toggle"></div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="extension-item" data-status="active">
+    <div class="extension-item-wrap">
+      <img src="logo-link-checker.svg" alt="" class="logo">
+      <div class="extension-name-text-wrap"> 
+        <p class="extension-name">LinkChecker</p>
+        <p class="extension-text">Scans and highlights broken links on any page.</p>
+      </div>  
+    </div>
+  <div class="remove-toggle-wrap">
+      <button class="remove">Remove</button>
+      <div class="toggle-wrap">
+        <div class="toggle"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="extension-item" data-status="active">
+    <div class="extension-item-wrap">
+      <img src="logo-dom-snapshot.svg" alt="" class="logo">
+      <div class="extension-name-text-wrap">
+        <p class="extension-name">DOM Snapshot</p>
+        <p class="extension-text">Capture and export DOM structures quickly.</p>
+      </div>  
+    </div>
+  <div class="remove-toggle-wrap">
+      <button class="remove">Remove</button>
+      <div class="toggle-wrap">
+        <div class="toggle"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="extension-item" data-status="active">
+    <div class="extension-item-wrap">
+      <img src="logo-console-plus.svg" alt="" class="logo">
+      <div class="extension-name-text-wrap">
+        <p class="extension-name">ConsolePlus</p>
+        <p class="extension-text">Enhanced developer console with advanced filtering and logging.</p>
+      </div>  
+    </div>
+  <div class="remove-toggle-wrap">
+      <button class="remove">Remove</button>
+      <div class="toggle-wrap">
+        <div class="toggle"></div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+</div>
+
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="blank">Frontend Mentor</a>. <br>
+    Coded by <a href="https://dmediaportfoliopage.netlify.app/" target="blank">D_Media</a>.
+  </div>
+</body>
+</html>
